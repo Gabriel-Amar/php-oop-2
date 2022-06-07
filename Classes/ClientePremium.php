@@ -3,7 +3,7 @@
 
     class ClientePremium extends Cliente{
         protected $newsletter;
-        protected $sconto = 20;
+        protected $sconto = "-20%";
 
         public function getNewsletter(){
             return $this->newsletter;

@@ -1,5 +1,4 @@
 <?php
-    
     class Cliente{
         protected $nome;
         protected $cognome;
@@ -34,11 +33,13 @@
             return $this->datacarta;
         }
         public function setDatacarta($_datacarta){
-            
-            if(date("Y/M") > $_datacarta){
-                throw new Exception('Carta non valida');
+            if(date("M/Y") > $_datacarta){
+                throw new Exception('Carta non valida ');
             }
             $this->datacarta = $_datacarta;
+        }
+        public function getFullNome(){
+            return "{$this->nome} {$this->cognome}";
         }
 
     }
