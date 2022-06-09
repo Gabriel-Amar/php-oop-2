@@ -45,11 +45,11 @@
   <div class="container">
     <a class="navbar-brand" href="#">Shop</a>
       <form class="d-flex">
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown dropstart">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Profilo
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#"><?php echo $utentepremium1->getFullNome() ?></a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Numero carta: <?php echo $utentepremium1->getCarta() ?></a></li>
